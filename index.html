@@ -1,19 +1,27 @@
+1.	<html>
+2.  <script>
+4.	function browserRedirect() 
+    {
+5.	    var sUserAgent = navigator.userAgent.toLowerCase();
+6.	    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+7.	    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+8.	    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+9.	    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+10.	    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+11.	    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+12.	    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+13.	    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+14.	    if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) )
+        {
+15.	        window.location.href="http://www.xinjdk.com";
+16.	    }
+        else
+        {
+17.	        window.location.href="http://www.xinjdk.com";
+18.	    }
+19.	}
+20.	browserRedirect();
+21.	</script>
+22.	</body>
+23.	</html>
 
-<script>
-function browserRedirect() {
-    var sUserAgent = navigator.userAgent.toLowerCase();
-    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-    var bIsAndroid = sUserAgent.match(/android/i) == "android";
-    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-    if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
-        window.location.href="http://www.xinjdk.com";
-    } else {
-        window.location.href="http://www.xinjdk.com";
-    }
-}
-browserRedirect();
